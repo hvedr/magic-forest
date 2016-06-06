@@ -1,0 +1,15 @@
+<h1>Build forest</h1>
+
+
+<form action="{% url 'result' %}" method="post">
+{% csrf_token %}
+    Image params<br />
+    <label for="Width">Width</label><br />
+    <input type="text" name="Width" id="Width"" /><br />
+    <label for="Heigth">Height</label><br />
+    <input type="text" name="Heigth" id="Heigth"" /><br />
+    <br>Tree params<br />
+
+<br /><input type="submit" value="Submit" />
+</form>
+
